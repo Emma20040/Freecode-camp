@@ -1,0 +1,22 @@
+{% extends 'home.html'}
+
+{% block content %}
+  <h1> About page</h1>
+  <p1> this is a template </p1>
+
+<p1>
+    {{my_text}}
+    {{my_number}}
+    {{my_list}}
+</p1>
+
+<ul>
+    <li>item1</li>
+    <li>item2</l1>
+    </ul>
+<ul>
+{% for my_subitem in my_list%}
+  <li>my_subitem</li>
+ {% endfor %}
+</ul>
+{% endblock content %}
